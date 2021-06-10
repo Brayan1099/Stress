@@ -28,7 +28,7 @@ def rr_to_hb(rr):
 st.set_page_config(layout="wide")
 st.write("Stress Wearables")
 
-left,right = st.beta_columns(2)
+left, right = st.beta_columns(2)
 
 hrv_MEAN_RR = right.slider("Latidos por minuto", math.floor(rr_to_hb(minVal.hrv_MEAN_RR)), math.floor(rr_to_hb(maxVal.hrv_MEAN_RR)) + 1, step = 1)
 hrv_MEAN_RR = 1/(hrv_MEAN_RR/1000/60)
@@ -67,7 +67,7 @@ addSli("eda_MEAN", "Actividad electrodermica media", left)
 left.markdown(
     "<center><img src ='https://live.staticflickr.com/7068/6949070181_592e6b60fd_b.jpg' style = 'width : 40%;'> <br> Image source: <a href='https://es.wikipedia.org/wiki/Red_neuronal_artificial'>Website</a></center>", unsafe_allow_html=True)
 
-sc = ["hrv_MEAN_RR", "eda_MEAN", "baseline", "meditation", "stress", "amusement", "hrv_KURT_SQUARE", "eda_MEAN_2ND_GRAD_CUBE"]
+sc = ["hrv_MEAN_RR", "eda_MEAN", "baseline", "meditation", "stress", "amusement"]
 
 state = left.selectbox("Situación actual",("Normal","Emocionado","Estresado","Meditando"))
 
