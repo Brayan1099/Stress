@@ -62,7 +62,7 @@ def addSli(var, text, place = None):
                     st.slider(text, minim, maxim, step = (maxim-minim)/10)
                     ]) 
             
-addSli("eda_MEAN", "Actividad electrodermica media", left)
+addSli("eda_MEAN", "Actividad electrodermica media", right)
 
 left.markdown(
     "<center><img src ='https://live.staticflickr.com/7068/6949070181_592e6b60fd_b.jpg' style = 'width : 40%;'> <br> Image source: <a href='https://es.wikipedia.org/wiki/Red_neuronal_artificial'>Website</a></center>", unsafe_allow_html=True)
