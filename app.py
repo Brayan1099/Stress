@@ -13,7 +13,8 @@ maxVal = joblib.load("maxVal.pkl")
 maxVal = pd.DataFrame(maxVal)
 minVal = joblib.load("minVal.pkl")
 minVal = pd.DataFrame(minVal)
-
+corr  =  joblib . load ( "datos / correlaciones.pkl" )
+corr  =  dict ( zip ( meanVal . columnas , corr ))
 val = joblib.load("meanVal.pkl")
 val = pd.DataFrame(val)
 
