@@ -115,7 +115,7 @@ def update():
   val.meditation = 1 if state == "Meditando" else 0
 
 
-if st.button('Predecir 🔎:'):
+if st.button('Predecir 🧐'):
   
   update()
 
