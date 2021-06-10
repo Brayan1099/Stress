@@ -32,7 +32,8 @@ left, right = st.beta_columns(2)
 hrv_MEAN_RR = right.slider("Latidos por minuto", math.floor(rr_to_hb(minVal.hrv_MEAN_RR)), math.floor(rr_to_hb(maxVal.hrv_MEAN_RR)) + 1, step = 1)
 hrv_MEAN_RR = 1/(hrv_MEAN_RR/1000/60)
 
-
+right.markdown(
+    "<center><img src ='https://upload.wikimedia.org/wikipedia/commons/e/e2/Polar_RC3_GPS_heart_rate_monitor_watch.JPG' style = 'width : 25%;'> <br> Image source: <a href="https://es.wikipedia.org/wiki/Red_neuronal_artificial">Website</a></center>" unsafe_allow_html=True)
 
 sliders = []
 def addSli(var, text, place = None):
@@ -62,6 +63,9 @@ def addSli(var, text, place = None):
                     ]) 
             
 addSli("eda_MEAN", "Actividad electrodermica media", left)
+
+left.markdown(
+    "<center><img src ='https://live.staticflickr.com/7068/6949070181_592e6b60fd_b.jpg' style = 'width : 40%;'> <br> Image source: <a href="https://es.wikipedia.org/wiki/Red_neuronal_artificial">Website</a></center>" unsafe_allow_html=True)
 
 sc = ["hrv_MEAN_RR", "eda_MEAN", "baseline", "meditation", "stress", "amusement", "hrv_KURT_SQUARE", "eda_MEAN_2ND_GRAD_CUBE"]
 
