@@ -26,7 +26,7 @@ def rr_to_hb(rr):
   return rr
 
 st.set_page_config(layout="wide")
-st.write("Stress Wearables")
+st.write("Stress Predictor")
 
 left, right = st.beta_columns(2)
 
@@ -115,7 +115,7 @@ def update():
   val.meditation = 1 if state == "Meditando" else 0
 
 
-if st.button('Predict:'):
+if st.button('Predecir 🔎:'):
   
   update()
 
