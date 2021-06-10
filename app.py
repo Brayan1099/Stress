@@ -41,7 +41,7 @@ def addSli(var, text, place = None):
   maxim = float(maxVal[var])
 
   inc = 0
-  while maxim - min < 0.1:
+  while maxim - minim < 0.1:
     maxim = maxim*10
     minim = minim*10
     inc = inc+1
