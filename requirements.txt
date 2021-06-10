@@ -1,9 +1,10 @@
-esfinge
+  
+sphinx
 numpy
 matplotlib
-almohada
-galería-esfinge
+pillow
+sphinx-gallery
 numpydoc
 pandas
 lz4
-repartido
+distributed
