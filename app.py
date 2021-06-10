@@ -121,7 +121,7 @@ if st.button('Predecir 🧐'):
 
   prediction = dt.predict(val)
   st.write('''
-  ## Results
+  ## Resultado 😎
   ''')
   nStress = int(rf.predict(val))
   if nStress < 3:
